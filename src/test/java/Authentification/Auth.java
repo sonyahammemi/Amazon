@@ -22,7 +22,7 @@ public class Auth {
 			
 			WebElement clickElement = driver.findElement(By.id("nav-link-accountList-nav-line-1"));
 			clickElement.click();
-			driver.findElement(By.id("ap_email")).sendKeys("sonya.hammemii@gmail.com"+Keys.ENTER);
+			driver.findElement(By.id("ap_email")).sendKeys("abc@gmail.com"+Keys.ENTER);
 			driver.findElement(By.id("ap_password")).sendKeys("test123"+Keys.ENTER);
 			String actualText = driver.findElement(By.id("nav-link-accountList-nav-line-1")).getText();
 			String expectedText = "Bonjour sonia";
